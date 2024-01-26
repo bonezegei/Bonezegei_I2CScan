@@ -5,7 +5,7 @@
   Date: September 2023 
 */
 
-#include "Bonezegei_I2CScan.h"
+#include <Bonezegei_I2CScan.h>
 
 void setup() {
   Serial.begin(115200);
