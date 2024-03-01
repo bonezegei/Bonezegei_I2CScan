@@ -13,7 +13,7 @@ void Bonezegei_I2CScan() {
   Serial.print("\n\n    ");
   for (int a = 0; a < 16; a++) {
     //Serial.printf("%02x  ", a);
-    Serial.print(c,HEX);
+    Serial.print(a,HEX);
     Serial.print(" ");
   }
   Serial.print("\n");
