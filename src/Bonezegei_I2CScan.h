@@ -12,13 +12,17 @@ void Bonezegei_I2CScan() {
   Wire.begin();
   Serial.print("\n\n    ");
   for (int a = 0; a < 16; a++) {
-    Serial.printf("%02x  ", a);
+    //Serial.printf("%02x  ", a);
+    Serial.print(c,HEX);
+    Serial.print(" ");
   }
   Serial.print("\n");
 
   int c = 0;
   for (int b = 0; b < 16; b++) {
-    Serial.printf("%02x  ", b);
+    //Serial.printf("%02x  ", b);
+    Serial.print(b,HEX);
+    Serial.print(" ");
     for (int a = 0; a < 16; a++) {
 
       Wire.beginTransmission(c);
