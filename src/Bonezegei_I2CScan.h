@@ -25,7 +25,9 @@ void Bonezegei_I2CScan() {
       int result = Wire.endTransmission();
       if (result == 0) {
         
-        Serial.printf("%02x  ", c);
+        //Serial.printf("%02x  ", c);
+        Serial.print(c,HEX);
+        Serial.print(" ");
       } else {
         Serial.print("--  ");
       }
